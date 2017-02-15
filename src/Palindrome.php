@@ -3,7 +3,7 @@
     {
         function palindromeTester($string)
         {
-            return $string == strrev($string);
+            return strtolower($string) == strtolower(strrev($string));
         }
     }
 ?>
