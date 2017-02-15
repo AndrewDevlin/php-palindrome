@@ -6,14 +6,24 @@
         function test_palindrome()
         {
             // Arrange
+            $tests = array(
+                array('bob', true),
+                array('mike', false)
+            );
+
             $new_palindrome = new Palindrome;
-            $input = 'bob';
 
-            // Act
-            $result = $new_palindrome->palindromeTester($input);
+            foreach ($tests as $test) {
+                // Arrange
+                $input = $test[0];
+                $expected_result = $test[1];
 
-            // Assert
-            $this->assertEquals(true, $result);
+                // Act
+                $actual_result = $new_palindrome->palindromeTester($input);
+
+                // Assert
+                $this->assertEquals($expected_result, $actual_result);
+            }
         }
     }
 ?>
