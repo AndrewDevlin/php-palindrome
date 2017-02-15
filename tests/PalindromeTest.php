@@ -17,7 +17,11 @@
             foreach ($tests as $test) {
                 // Arrange
                 $input = $test[0];
-                $expected_result = $test;
+
+                $expected_result = array(
+                    $test[0],
+                    $test[1]
+                );
 
                 // Act
                 $actual_result = array(
@@ -45,7 +49,11 @@
             foreach ($tests as $test) {
                 // Arrange
                 $input = $test[0];
-                $expected_result = $test;
+
+                $expected_result = array(
+                    $test[0],
+                    $test[1]
+                );
 
                 // Act
                 $actual_result = array(
