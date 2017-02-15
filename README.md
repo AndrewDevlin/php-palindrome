@@ -42,7 +42,7 @@ This project demonstrates building an app using PHPUnit, Silex and Twig framewor
 
 ## Specifications
 * Phase 1 - Dependencies, composer files and .gitignore.
-* Phase 2 - Empty Palindrome class with an palindrome tester method.
+* Phase 2 - Empty Palindrome class.
 * Phase 3 - Build Test cases and implement Palindrome method.
 
 * Behavior given a string, returns true or false.
