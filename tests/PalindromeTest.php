@@ -8,7 +8,8 @@
             // Arrange
             $tests = array(
                 array('bob', true),
-                array('mike', false)
+                array('mike', false),
+                array('Bob', true)
             );
 
             $new_palindrome = new Palindrome;
