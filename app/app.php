@@ -20,7 +20,7 @@
         if (array_key_exists($input_key, $_GET)) {
             $input_string = $_GET[$input_key];
             $new_palindrome = new Palindrome;
-            $boolean_result = $new_palindrome->palindromeTester($input_string) ;
+            $boolean_result = $new_palindrome->palindromeTesterHard($input_string) ;
 
             if ($boolean_result) {
                 $string_result = 'true';
