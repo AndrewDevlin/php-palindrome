@@ -7,24 +7,22 @@
     $app = new Silex\Application();
     $app['debug'] = true;
 
-    // $app->register(
-    //     new Silex\Provider\TwigServiceProvider(),
-    //     array('twig.path' => __DIR__.'/../views')
-    // );
+    $app->register(
+        new Silex\Provider\TwigServiceProvider(),
+        array('twig.path' => __DIR__.'/../views')
+    );
 
     $app->get('/', function() use ($app) {
-        return 'hello';
+        $string = "";
+        $result = "";
         
-
-
-        // return $app['twig']->render(
-        //     'anagram.html.twig',
-        //     array(
-        //         "actual_anagrams" => $actual_anagrams,
-        //         "target_word" => $target_word,
-        //         "possible_anagrams" => $possible_anagrams
-        //     )
-        // );
+        return $app['twig']->render(
+            'palindrome.html.twig',
+            array(
+                "string" => $string,
+                "result" => $result
+            )
+        );
     });
 
     return $app;
